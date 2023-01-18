@@ -1,0 +1,15 @@
+//file creation using file ouput stream
+import java.io.*;
+
+class MainClass{
+    public static void main(String args[]){
+        try{
+            FileOutputStream fi=new FileOutputStream("test121.txt");
+            System.out.println("File created");
+        }
+        catch(IOException e){
+                System.out.println(e);
+        }
+        
+    }
+}

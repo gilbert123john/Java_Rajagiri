@@ -1,0 +1,87 @@
+//Generate a bill by using command line argument
+
+class Hotel{
+    String product[];
+    int qty[];
+    int len;
+    
+    Hotel(String args[]){
+        
+        int j=0,l=0;
+        len=args.length/2;
+        product = new String[len];
+        qty = new int[len];
+        System.out.println("\n\n\n\tTea Today Shope (Bill)");
+        for(int i=0;i<len;i++){
+            j=2*i;
+            product[i]=args[j];
+        }
+        for(int i=0;i<len;i++){
+            l=2*i+1;
+            qty[i]=Integer.parseInt(args[l]);
+        }
+        
+    }
+    void generateBill(){
+            String ch;
+            int i,price,ttl=0;
+            System.out.println("---------------------------------------------");
+            System.out.println("Item\tQty\tPrice");
+            try{
+
+            
+            for(i=0;i<len;i++){
+                ch=product[i];
+                switch(ch){
+                    case "Tea":
+                        price = qty[i]*10;
+                        ttl=ttl+price;
+                        System.out.println("Tea \t"+qty[i]+"\t"+price);
+                        break;
+                    case "Snack":
+                        price = qty[i]*12;
+                        ttl=ttl+price;
+                        System.out.println("Snack \t"+qty[i]+"\t"+price);
+                        break;
+                    case "Juce":
+                        price = qty[i]*30;
+                        ttl=ttl+price;
+                        System.out.println("Juce \t"+qty[i]+"\t"+price);
+                        break;
+                    case "Shake":
+                        price = qty[i]*50;
+                        ttl=ttl+price;
+                        System.out.println("Shake \t"+qty[i]+"\t"+price);
+                        break;
+                    case "Coffee":
+                        price = qty[i]*15;
+                        ttl=ttl+price;
+                        System.out.println("Coffee \t"+qty[i]+"\t"+price);
+                        break;
+                    default:
+                        break;
+
+                }
+                
+            }
+            System.out.println("---------------------------------------------");
+            double gst=ttl*.4;
+            double grandTotal = ttl+gst;
+            System.out.println("Total\t\t"+ttl);
+            System.out.println("GST\t\t"+gst);
+            System.out.println("Grand Total\t"+grandTotal);
+            System.out.println("---------------------------------------------");
+            System.out.println("\nThank you..Visit again.\n\n");
+        }
+        catch(ArrayIndexOutOfBoundsException e){
+            System.out.println(e);
+        }
+    }
+}
+class MainClass{
+    public static void main(String args[]){
+        Hotel h = new Hotel(args);
+        h.generateBill();
+
+    }
+}

@@ -1,0 +1,15 @@
+//file creation with 1 File.creatNewFile()
+import java.io.*;
+
+class MainClass{
+    public static void main(String args[]) throws IOException{
+        File f= new File("new.txt");
+        boolean fc=f.createNewFile();
+        if(fc){
+            System.out.println("File Created");
+        }
+        else{
+            System.out.println("File Not Created");
+        }
+    }
+}
