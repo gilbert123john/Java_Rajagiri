@@ -15,7 +15,6 @@ class MainClass8_3{
         System.out.println("Enter the String Value :");
         name=sc.nextLine();
         StringBuffer revString = new StringBuffer(name);
-        StringBuffer actualString = new StringBuffer(name);
         revString=revString.reverse();
         try{
             if(name.equals(revString.toString())){
