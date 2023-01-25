@@ -8,14 +8,14 @@ class MainClass10_3{
             File f = new File(p);
             File[] fa=f.listFiles();
             for(File a: fa){
+                String s =a.toString();
+                boolean found= s.contains(name);
+                if(found){
+                    System.out.println("File found at location "+a);
+                }
                 if(a.isDirectory()){
                     listall(a.getPath(),name);  
-                }
-                else{
-                    System.out.println("File "+a);
-                    // StringBuilder nameOfFile= new StringBuilder(a).toString();
-                    // System.out.println("StringBuilder "+nameOfFile);
-                }
+                }    
             }
         }
         catch(Exception e){
@@ -28,7 +28,7 @@ class MainClass10_3{
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the Name of the file to be Searched :");
         searchName=sc.nextLine();
-        System.out.println("Enter the Drive Name (C,D,E ?) :");
+        System.out.println("Enter the Drive Name (C://,D://,E:// and folder if any ?) :");
         path=sc.nextLine();
         listall(path,searchName);
     }
