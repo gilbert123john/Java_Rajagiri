@@ -85,3 +85,11 @@ class MainClass{
 
     }
 }
+/*
+"System.out.println": {
+    "prefix": "sysout",
+    "body" : ["System.out.println"],
+    "description" : "System out println with placeholder in parens"
+}
+*/
+
