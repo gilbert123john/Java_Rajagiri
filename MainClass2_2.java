@@ -1,7 +1,7 @@
 //Find the minimum of three numbers using a single statement.
 import java.io.*;
 import java.lang.*;
-public class SmallInThree{
+public class MainClass2_2{
 	public static void main(String args[]){
 		int x,y,z,small;
 		DataInputStream input = new DataInputStream(System.in);

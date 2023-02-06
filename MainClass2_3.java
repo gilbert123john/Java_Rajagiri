@@ -1,7 +1,7 @@
 //WAP to search for a given element in an array.
 import java.io.*;
 import java.lang.*;
-public class SearchArrayElement{
+public class MainClass2_3{
 	public static void main(String args[]){
 		int a[],i,n,chk;
 		int big=0;

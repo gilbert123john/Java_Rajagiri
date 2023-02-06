@@ -1,7 +1,7 @@
 //Write a program to print the row wise and column wise sum of a 2D array.
 import java.io.*;
 import java.lang.*;
-public class RowAndColSumOfTwoDimAarray{
+public class MainClass2_5{
 	public static void main(String args[]){
         int a[][];
         int r,c;

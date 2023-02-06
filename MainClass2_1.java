@@ -1,6 +1,6 @@
 // WAP to read three numbers and the maximum.
 import java.io.*;
-public class BigInThree{
+public class MainClass2_1{
 	public static void main(String args[]){
 		int x,y,z,big;
 		DataInputStream input = new DataInputStream(System.in);

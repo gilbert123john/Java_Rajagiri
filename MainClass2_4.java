@@ -1,7 +1,7 @@
 // WAP to sort elements in an array in ascending order.
 import java.io.*;
 import java.lang.*;
-public class SortArrayElementsAsc{
+public class MainClass2_4{
 	public static void main(String args[]){
 		int a[],n; 
 		int temp;
