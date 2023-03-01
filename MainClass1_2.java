@@ -1,3 +1,4 @@
+//WAP to display two numbers received as command line argument, and print its product
 public class MainClass1_2
 {
     public static void main(String args[]) {

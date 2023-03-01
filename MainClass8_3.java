@@ -1,4 +1,5 @@
 //Write a program to implement throw and finally.
+//check
 import java.util.*;
 
 class PalindromeExc extends Exception{

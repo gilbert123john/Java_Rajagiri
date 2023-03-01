@@ -1,6 +1,6 @@
 // WAP to accept two numbers from the keyboard and swap them.
 import java.io.*;
-public class MainClass1_3{
+public class MainClass1_4{
 	public static void main(String args[]){
 		String s1,s2,temp;
 		DataInputStream input = new DataInputStream(System.in);

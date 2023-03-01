@@ -22,7 +22,7 @@ class MainClass11_3 {
   
         // instance of String type
         Test<String> sObj
-            = new Test<String>("GeeksForGeeks");
+            = new Test<String>("Gilbert");
         System.out.println(sObj.getObject());
     }
 }

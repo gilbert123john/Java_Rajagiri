@@ -1,3 +1,4 @@
+//WAP to read two numbers and display the output in the form of ‘Sum of 2 and 3 is 5
 import java.io.*;
 public class MainClass1_3
 {

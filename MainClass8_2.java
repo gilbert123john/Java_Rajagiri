@@ -33,7 +33,7 @@ class MainClass8_2{
 
             boolean a=primeValue.checkPrime(n);
             if(a){
-                throw new primeException("Prime number is not allowerd");
+                throw new primeException("Prime number is not allowed");
             }
         }
         catch(primeException p){
