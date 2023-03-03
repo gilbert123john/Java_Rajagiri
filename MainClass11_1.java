@@ -29,7 +29,6 @@ class Operations
 			byte[] b = str.getBytes();
 			RandomAccessFile raf = new
 			RandomAccessFile(fileName,"rw");
-			//raf.seek(offset);
 
 			raf.write(b);
 			System.out.println("Write successful");

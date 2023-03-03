@@ -10,11 +10,11 @@ class Item{
             catch(InterruptedException e){
                 System.out.println(e);
             }
+        }
             i=s;
             System.out.println("Produced "+i);
             produced = true;
             notify();
-        }
     }
     synchronized int consume(){
         if(!produced){
@@ -24,28 +24,29 @@ class Item{
             catch(InterruptedException e){
                 System.out.println(e);
             }
+        }
             System.out.println("Consumed "+i);
             produced = false;
             notify();
-            return i;
-        }
+            
+        return i;
     }
 }
 class Producer extends Thread{
-    item q;
-    Producer(item qq){
+    Item q;
+    Producer(Item qq){
         q=qq;
     }
     public void run(){
         int i=0;
-        while(true){
-            q.produce(i++);
+        while(i<10){
+            q.Produce(++i);
         }
     }
 }
 class Consumer extends Thread{
-    item q;
-    Consumer(item qq){
+    Item q;
+    Consumer(Item qq){
         q=qq;
     }
     public void run(){
