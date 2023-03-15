@@ -42,10 +42,10 @@ class MainClass12_3
 		FileOutputStream("engine.txt");
 		ObjectOutputStream oos = new ObjectOutputStream(fos);
 		oos.writeObject(b);
-		System.out.println("Serialization of engine object successful");
+		System.out.println("Serialization of Engine object successful");
 		oos.close();
 		fos.close();
-		System.out.println("\nDeserializing and displaying engine object:");
+		System.out.println("\nDeserializing and displaying Engine object:");
 		FileInputStream fis = new FileInputStream("engine.txt");
 		ObjectInputStream ois = new ObjectInputStream(fis);
 		Bike b1 = (Bike)ois.readObject();
