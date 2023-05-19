@@ -6,7 +6,7 @@ class MainClass12_1_Serialization {
        SubClass12_1_Student s = new SubClass12_1_Student("abcd",22,121);
        SubClass12_1_Student ss = new SubClass12_1_Student("gil",24,123);
        try{
-        FileOutputStream fout = new FileOutputStream("E:\\Java\\s.txt");//creation of file
+        FileOutputStream fout = new FileOutputStream("s.txt");//creation of file
         ObjectOutputStream oss = new ObjectOutputStream(fout);//saving the object
         oss.writeObject(s);
         oss.writeObject(ss);

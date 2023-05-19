@@ -24,7 +24,7 @@ public class MainClass12_2
     {
         try
         {
-        Maruti m1=new Maruti("car","red",2000);
+        Maruti m1=new Maruti("car","red",5500);
         FileOutputStream fout=new FileOutputStream("demo.txt");
         ObjectOutputStream out=new ObjectOutputStream(fout);
         out.writeObject(m1);

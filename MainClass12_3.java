@@ -36,8 +36,8 @@ class MainClass12_3
 {
 	public static void main(String args[]) throws Exception
 	{
-		Engine en = new Engine("Single",27.33F);
-		Bike b = new Bike("JAWA",293,en);
+		Engine en = new Engine("Single",30.33F);
+		Bike b = new Bike("Bullet 350 x",300,en);
 		FileOutputStream fos = new
 		FileOutputStream("engine.txt");
 		ObjectOutputStream oos = new ObjectOutputStream(fos);
